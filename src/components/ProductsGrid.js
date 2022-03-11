@@ -28,9 +28,24 @@ const ProductCardDiv = styled.div`
 export default function ProductsGrid() {
 	return (
 		<FlexSection>
-			<EachProductCard buttonColor={customColors.hostGatorBlue} plan={correctPlanIcon.planP} />
-			<EachProductCard buttonColor={customColors.hostGatorOrange} plan={correctPlanIcon.planM} />
-			<EachProductCard buttonColor={customColors.hostGatorBlue} plan={correctPlanIcon.planTurbo} />
+			<EachProductCard
+				productStorage={100}
+				numberOfSites="Para 1 site"
+				buttonColor={customColors.hostGatorBlue}
+				plan={correctPlanIcon.planP}
+			/>
+			<EachProductCard
+				productStorage={100}
+				numberOfSites="Sites Ilimitados"
+				buttonColor={customColors.hostGatorOrange}
+				plan={correctPlanIcon.planM}
+			/>
+			<EachProductCard
+				productStorage={150}
+				numberOfSites="Sites Ilimitados"
+				buttonColor={customColors.hostGatorBlue}
+				plan={correctPlanIcon.planTurbo}
+			/>
 		</FlexSection>
 		// </EachProductCard>// <FlexSection>
 		// 	<ProductCardDiv>

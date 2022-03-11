@@ -57,7 +57,7 @@ export default function EachProductCard(props) {
 					<DisabledButton disabled>40% OFF</DisabledButton>
 				</FlexSection>
 			</div>
-			<ProductPerkList productStorage={100} numberOfSites="Para 1 site" />
+			<ProductPerkList productStorage={props.productStorage} numberOfSites={props.numberOfSites} />
 		</ProductCardDiv>
 	);
 }
