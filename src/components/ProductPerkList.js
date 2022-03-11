@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const NonStyledList = styled.ul`
+const NonStyledList = styled.ul`
 	text-align: left;
 	list-style-type: none;
 `;
 
-export const UnderlinedSpan = styled.span`
+const UnderlinedSpan = styled.span`
 	text-decoration: underline;
 `;
 

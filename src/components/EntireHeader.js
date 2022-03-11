@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { ReactComponent as HostgatorLogo } from "../components/svgIcons/HostgatorLogo.svg";
-import { ReactComponent as IconCheck } from "../components/svgIcons/IconCheck.svg";
-import { ReactComponent as HeaderDesks } from "../components/svgIcons/HeaderDesks.svg";
-import { ReactComponent as TableGuy } from "../components/svgIcons/TableGuy.svg";
+import { default as HostgatorLogo } from "../components/svgIcons/HostgatorLogo.svg";
+import { default as IconCheck } from "../components/svgIcons/IconCheck.svg";
+import { default as HeaderDesks } from "../components/svgIcons/HeaderDesks.svg";
+import { default as TableGuy } from "../components/svgIcons/TableGuy.svg";
 // import { ReactComponent as DownArrowBlue } from "../components/svgIcons/DownArrowBlue.svg";
 import { customColors } from "../colors";
 
-export const FlexRowDiv = styled.header`
+const FlexRowDiv = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -14,19 +14,19 @@ export const FlexRowDiv = styled.header`
 	background-color: ${customColors.darkBluePrimary};
 `
 
-export const SoftBluePTag = styled.p`
+const SoftBluePTag = styled.p`
 	color: #b9d0ef;
 `
 
-export const TextAlignCenterDiv = styled.div`
+const TextAlignCenterDiv = styled.div`
     text-align: center;
 `
 
-export const ColoredH3 = styled.h3`
+const ColoredH3 = styled.h3`
     color: white;
 `
 
-export const FlexHorizontallyDiv = styled.div`
+const FlexHorizontallyDiv = styled.div`
 	display: flex;
 	flex-direction: row;
 `;
@@ -35,10 +35,10 @@ export default function EntireHeader() {
 	return (
 		<>
 			<div>
-				<HostgatorLogo />
+				<img src={HostgatorLogo} alt="logo" />
 			</div>
 			<FlexRowDiv>
-				<HeaderDesks />
+				<img src={HeaderDesks} alt="header desks" />
 				<TextAlignCenterDiv>
 					<SoftBluePTag>Hospedagem de Sites</SoftBluePTag>
 					<ColoredH3>
@@ -46,18 +46,20 @@ export default function EntireHeader() {
 						evite perder visitantes diariamente
 					</ColoredH3>
 					<SoftBluePTag>
-						<IconCheck /> 99,9% de disponibilidade: seu site sempre no ar
+						<img src={IconCheck} alt="icon check" /> 99,9% de disponibilidade:
+						seu site sempre no ar
 					</SoftBluePTag>
 					<FlexHorizontallyDiv>
 						<SoftBluePTag>
-							<IconCheck /> Suporte 24h, todos os dias
+							<img src={IconCheck} alt="icon check" /> Suporte 24h, todos os
+							dias
 						</SoftBluePTag>
 						<SoftBluePTag>
-							<IconCheck /> Painel de Controle cPanel
+							<img src={IconCheck} alt="icon check" /> Painel de Controle cPanel
 						</SoftBluePTag>
 					</FlexHorizontallyDiv>
 				</TextAlignCenterDiv>
-				<TableGuy />
+				<img src={TableGuy} alt='table guy' />
 			</FlexRowDiv>
 		</>
 	);

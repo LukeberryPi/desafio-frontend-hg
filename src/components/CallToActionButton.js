@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-const CallToActionButton = styled.button`
-	background-color: ${(props) => props.backgroundColor};
+export const CallToActionButton = styled.button`
+	background-color: ${(props) => props.backgroundButtonColor};
 	color: white;
 	font-size: 22px;
 	font-weight: 600;
@@ -11,4 +11,4 @@ const CallToActionButton = styled.button`
 	border: 0;
 `;
 
-export default CallToActionButton;
+

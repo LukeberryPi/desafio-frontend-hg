@@ -1,81 +1,83 @@
-import CallToActionButton from "./CallToActionButton";
-import ProductPerkList from "./ProductPerkList";
+// CHANGE COMPLETELY
+// NO LONGER A GRID
+// RENAME AND ADD NEW COMPONENTS
+import { correctPlanIcon } from "./EachProductCard";
 import { customColors } from "../colors";
 import styled from "styled-components";
 
-import { ReactComponent as PlanoPIcon } from "../components/svgIcons/PlanoPIcon.svg";
-import { ReactComponent as PlanoMIcon } from "../components/svgIcons/PlanoMIcon.svg";
-import { ReactComponent as PlanoTurboIcon } from "../components/svgIcons/PlanoTurboIcon.svg";
-import { ReactComponent as InfoIcon } from "../components/svgIcons/InfoIcon.svg";
+import EachProductCard from "./EachProductCard";
 
-export const BoldBlueP = styled.p`
+const BoldBlueP = styled.p`
 	color: ${customColors.darkBluePrimary};
 	font-weight: bold;
-`
-
-export const FlexSection = styled.section`
-	display: flex;
 `;
 
-export const ProductCardDiv = styled.div`
+const FlexSection = styled.section`
+	display: flex;
+	justify-content: center;
+`;
+
+const ProductCardDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	outline: 1px red solid;
 `;
 
 export default function ProductsGrid() {
 	return (
 		<FlexSection>
-			<ProductCardDiv>
-				<PlanoPIcon />
-				<BoldBlueP>
-					Plano P
-				</BoldBlueP>
-				<p>AWAIT API</p>
-				<CallToActionButton backgroundColor={customColors.hostGatorBlue}>
-					Contrate Agora
-				</CallToActionButton>
-				<div>
-					<strong>1 ano de Domínio Grátis </strong>
-					<InfoIcon />
-				</div>
-				<ProductPerkList productStorage={100} numberOfSites="Para 1 site" />
-			</ProductCardDiv>
-			<ProductCardDiv>
-				<PlanoMIcon />
-				<BoldBlueP>Plano M</BoldBlueP>
-				<p>AWAIT API</p>
-				<CallToActionButton backgroundColor={customColors.hostGatorOrange}>
-					Contrate Agora
-				</CallToActionButton>
-				<div>
-					<strong>1 ano de Domínio Grátis </strong>
-					<InfoIcon />
-				</div>
-				<ProductPerkList
-					productStorage={100}
-					numberOfSites="Sites Ilimitados"
-				/>
-			</ProductCardDiv>
-			<ProductCardDiv>
-				<PlanoTurboIcon />
-				<BoldBlueP>Plano Turbo</BoldBlueP>
-				<p>AWAIT API</p>
-				<CallToActionButton backgroundColor={customColors.hostGatorBlue}>
-					Contrate Agora
-				</CallToActionButton>
-				<div>
-					<strong>1 ano de Domínio Grátis </strong>
-					<InfoIcon />
-				</div>
-				<ProductPerkList
-					productStorage={150}
-					numberOfSites="Sites Ilimitados"
-				/>
-			</ProductCardDiv>
+			<EachProductCard buttonColor={customColors.hostGatorBlue} plan={correctPlanIcon.planP} />
+			<EachProductCard buttonColor={customColors.hostGatorOrange} plan={correctPlanIcon.planM} />
+			<EachProductCard buttonColor={customColors.hostGatorBlue} plan={correctPlanIcon.planTurbo} />
 		</FlexSection>
+		// </EachProductCard>// <FlexSection>
+		// 	<ProductCardDiv>
+		// 		<img src={PlanoPIcon} alt="plano p icon" />
+		// 		<BoldBlueP>Plano P</BoldBlueP>
+		// 		<p>AWAIT API</p>
+		// 		<CallToActionButton backgroundColor={customColors.hostGatorBlue}>
+		// 			Contrate Agora
+		// 		</CallToActionButton>
+		// 		<div>
+		// 			<strong>1 ano de Domínio Grátis </strong>
+		// 			<img src={InfoIcon} alt="info icon" />
+		// 		</div>
+		// 		<ProductPerkList productStorage={100} numberOfSites="Para 1 site" />
+		// 	</ProductCardDiv>
+		// 	<ProductCardDiv>
+		// 		<img src={PlanoMIcon} alt="plano m icon" />
+		// 		<BoldBlueP>Plano M</BoldBlueP>
+		// 		<p>AWAIT API</p>
+		// 		<CallToActionButton backgroundColor={customColors.hostGatorOrange}>
+		// 			Contrate Agora
+		// 		</CallToActionButton>
+		// 		<div>
+		// 			<strong>1 ano de Domínio Grátis </strong>
+		// 			<img src={InfoIcon} alt="info icon" />
+		// 		</div>
+		// 		<ProductPerkList
+		// 			productStorage={100}
+		// 			numberOfSites="Sites Ilimitados"
+		// 		/>
+		// 	</ProductCardDiv>
+		// 	<ProductCardDiv>
+		// 		<img src={PlanoTurboIcon} alt="plano turbo icon" />
+		// 		<BoldBlueP>Plano Turbo</BoldBlueP>
+		// 		<p>AWAIT API</p>
+		// 		<CallToActionButton backgroundColor={customColors.hostGatorBlue}>
+		// 			Contrate Agora
+		// 		</CallToActionButton>
+		// 		<div>
+		// 			<strong>1 ano de Domínio Grátis </strong>
+		// 			<img src={InfoIcon} alt="info icon" />
+		// 		</div>
+		// 		<ProductPerkList
+		// 			productStorage={150}
+		// 			numberOfSites="Sites Ilimitados"
+		// 		/>
+		// 	</ProductCardDiv>
+		// </FlexSection>
 	);
 }
