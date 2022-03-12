@@ -1,4 +1,4 @@
-import ProductsGrid from "./components/ProductsGrid";
+import ProductsGrid from "./components/ProductGrid";
 import EntireHeader from "./components/EntireHeader";
 import styled from "styled-components";
 import { customColors } from "./colors";
@@ -8,7 +8,6 @@ import BillingCycleRow from "./components/BillingCycleButtons";
 const EntireAppContainer = styled.div`
 	background-color: ${customColors.backgroundWhite};
 `;
-
 
 function App() {
 
@@ -20,10 +19,6 @@ function App() {
 				<BillingCycleRow />
 				<ProductsGrid />
 			</EntireAppContainer>
-
-			<div>
-				<p>Confira as condições da promoção</p>
-			</div>
 		</>
 	);
 }

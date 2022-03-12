@@ -4,13 +4,15 @@ export default function DataFetching(props) {
 	const [posts, setPosts] = useState([]);
 
 	useEffect(() => {
-		fetch("https://2891637c-8ab7-4a84-906b-a98465726f85.mock.pstmn.io/prices")
+		const url = "https://2891637c-8ab7-4a84-906b-a98465726f85.mock.pstmn.io/prices";
+		
+		fetch(url)
 			.then((res) => res.json())
 			.then((dados) => {
 				console.log(dados);
-				Object.keys(dados.shared.products);
+				const actualApi = Object.keys(dados.shared.products);
 				let myArray = [];
-				Object.keys(dados.shared.products).forEach((e) =>
+				actualApi.forEach((e) =>
 					myArray.push(dados.shared.products[e])
 				);
 				setPosts(myArray);
