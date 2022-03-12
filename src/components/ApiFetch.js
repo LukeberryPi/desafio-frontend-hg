@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function DataFetching(props) {
+export default function ApiFetch(props) {
 	const [posts, setPosts] = useState([]);
 
 	useEffect(() => {
@@ -11,11 +11,11 @@ export default function DataFetching(props) {
 			.then((dados) => {
 				console.log(dados);
 				const actualApi = Object.keys(dados.shared.products);
-				let myArray = [];
+				let actualApiArray = [];
 				actualApi.forEach((e) =>
-					myArray.push(dados.shared.products[e])
+					actualApiArray.push(dados.shared.products[e])
 				);
-				setPosts(myArray);
+				setPosts(actualApiArray);
 			}).catch(err => console.log(err));
 	}, []);
 

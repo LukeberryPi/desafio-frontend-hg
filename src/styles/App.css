@@ -1,5 +1,8 @@
 * {
     font-family: "Montserrat";
 	box-sizing: border-box;
-    outline: 2px solid red;
+}
+
+body {
+    font-size: 16px;
 }

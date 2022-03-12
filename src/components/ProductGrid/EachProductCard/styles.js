@@ -30,14 +30,16 @@ export const FlexSection = styled.section`
 
 export const ProductCardDiv = styled.div`
 	display: flex;
+	height: 650px;
 	flex-direction: column;
-	border-top: ${(props) => props.borderTop};
-	border-bottom: ${(props) => props.borderBottom};
+	box-shadow: ${(props) => props.boxShadow};
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	background-color: ${customColors.plainWhite};
-	margin: 0px 10px;
+	margin: 0px 8px;
+	border-radius: 4px;
+	padding-top: 32px;
 `;
 
 export const DisabledButton = styled.button`
@@ -46,4 +48,11 @@ export const DisabledButton = styled.button`
 	border-radius: 31px;
 	font-weight: bold;
 	color: ${customColors.plainWhite};
+	border-color: ${customColors.greenPrimary};
 `;
+
+export const DarkBluePrimaryPTag = styled.p`
+	font-size: 14px;
+	color: ${customColors.darkBluePrimary};
+	margin-right: 5px;
+`

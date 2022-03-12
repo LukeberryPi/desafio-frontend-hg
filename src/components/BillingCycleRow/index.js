@@ -1,10 +1,14 @@
-import { default as unselectedRadio } from "../svgIcons/UnselectedRadio.svg";
+import { default as UnselectedRadio } from "../svgIcons/UnselectedRadio.svg";
 import { default as SelectedRadio } from "../svgIcons/SelectedRadio.svg";
 
-import { TextAlignCenterDiv } from "./styles.js";
-import { BillingCycleRowDiv } from "./styles.js";
-import { BillingCycleButton } from "./styles.js";
-import { HostGatorBluePTag } from "./styles.js";
+import {
+	TextAlignCenterDiv,
+	BillingCycleRowDiv,
+	BillingCycleButton,
+	HostGatorBluePTag,
+	ButtonDiv,
+	ButtonText,
+} from "./styles";
 
 import { customColors } from "../../colors";
 
@@ -20,21 +24,27 @@ export default function BillingCycleRow() {
 					bold="bold"
 					onClick={"setPricesToTriennally"}
 				>
-					<img src={SelectedRadio} alt="unselected radio" /> 3 anos
+					<ButtonDiv>
+						<img src={SelectedRadio} alt="unselected radio" /> <ButtonText>3 anos</ButtonText>
+					</ButtonDiv>
 				</BillingCycleButton>
 				<BillingCycleButton
 					billingCycleButtonTextColor={customColors.hostGatorBlue}
 					borderRadius={21}
 					onClick={"setPricesToAnnually"}
 				>
-					<img src={unselectedRadio} alt="unselected radio" /> 1 ano
+					<ButtonDiv>
+						<img src={UnselectedRadio} alt="unselected radio" /> <ButtonText>1 ano</ButtonText>
+					</ButtonDiv>
 				</BillingCycleButton>
 				<BillingCycleButton
 					billingCycleButtonTextColor={customColors.hostGatorBlue}
 					borderRadius={21}
 					onClick={"setPricesToMonthly"}
 				>
-					<img src={unselectedRadio} alt="unselected radio" /> 1 mês
+					<ButtonDiv>
+						<img src={UnselectedRadio} alt="unselected radio" /> <ButtonText>1 mês</ButtonText>
+					</ButtonDiv>
 				</BillingCycleButton>
 			</BillingCycleRowDiv>
 		</TextAlignCenterDiv>

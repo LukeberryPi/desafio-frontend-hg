@@ -12,6 +12,7 @@ export const EntireHeaderDiv = styled.header`
 
 export const SoftBluePTag = styled.p`
 	color: ${customColors.softBlue};
+	margin: 5px;
 `;
 
 export const TextAlignCenterDiv = styled.div`
@@ -25,9 +26,20 @@ export const PositionAbsoluteBottom0 = styled.div`
 
 export const WhiteH3 = styled.h3`
 	color: ${customColors.plainWhite};
+	margin-top: 8px;
+	margin-bottom: 32px;
 `;
 
 export const FlexHorizontallyDiv = styled.div`
 	display: flex;
 	flex-direction: row;
 `;
+
+export const FiftyPercentDiv = styled.div`
+	width: 50%;
+	text-align: center;
+`
+
+export const SvgDiv = styled.div`
+	
+`

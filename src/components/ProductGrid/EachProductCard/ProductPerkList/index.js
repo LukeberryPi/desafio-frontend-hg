@@ -1,37 +1,28 @@
-import styled from "styled-components";
-
-const NonStyledList = styled.ul`
-	text-align: left;
-	list-style-type: none;
-`;
-
-const UnderlinedSpan = styled.span`
-	text-decoration: underline;
-`;
+import { UnderlinedSpan, LeftMostDiv } from "./styles";
 
 export default function ProductPerkList(props) {
 	return (
-		<NonStyledList>
-			<li>{props.numberOfSites}</li>
-			<li>
+		<LeftMostDiv>
+			<p>{props.numberOfSites}</p>
+			<p>
 				<strong>{props.productStorage}GB</strong> de Armazenamento
-			</li>
-			<li>
+			</p>
+			<p>
 				Contas de E-mail <strong>Ilimitadas</strong>
-			</li>
-			<li>
-				Criador de Sites{" "}
+			</p>
+			<p>
+				Criador de Sites 
+				<UnderlinedSpan>
+					<strong> Grátis</strong>
+				</UnderlinedSpan>
+			</p>
+			<p>
+				Certificado SSL
 				<strong>
-					<UnderlinedSpan>Grátis</UnderlinedSpan>
+					<UnderlinedSpan> Grátis </UnderlinedSpan>
 				</strong>
-			</li>
-			<li>
-				Certificado SSL{" "}
-				<strong>
-					<UnderlinedSpan>Grátis</UnderlinedSpan>
-				</strong>{" "}
 				(https)
-			</li>
-		</NonStyledList>
+			</p>
+		</LeftMostDiv>
 	);
 }

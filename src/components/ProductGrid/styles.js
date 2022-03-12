@@ -25,6 +25,7 @@ export const FooterNote = styled.p`
 	text-decoration: underline;
 	color: ${customColors.hostGatorBlue};
 	font-size: 12px;
+	text-align: right;
 `;
 
 export const DivInheritWidth = styled.div`

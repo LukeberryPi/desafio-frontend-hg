@@ -5,7 +5,7 @@ import EachProductCard from "./EachProductCard/index.js";
 
 import { FlexSection } from "./styles";
 import { FooterNote } from "./styles";
-import { DivInheritWidth } from "./styles";
+import { FlexHorizontallyDiv, FiftyPercentDiv } from "../EntireHeader/styles";
 
 export default function ProductGrid() {
 	return (
@@ -22,6 +22,7 @@ export default function ProductGrid() {
 					numberOfSites="Sites Ilimitados"
 					buttonColor={customColors.hostGatorOrange}
 					plan={correctPlanIcon.planM}
+					boxShadow={`0 -12px 0 ${customColors.hostGatorOrange}, 0 4px 0 ${customColors.hostGatorOrange}`}
 				/>
 				<EachProductCard
 					productStorage={150}
@@ -30,9 +31,14 @@ export default function ProductGrid() {
 					plan={correctPlanIcon.planTurbo}
 				/>
 			</FlexSection>
-			<DivInheritWidth>
-				<FooterNote>*Confira as condições da promoção</FooterNote>
-			</DivInheritWidth>
+			<FlexHorizontallyDiv>
+				<FiftyPercentDiv></FiftyPercentDiv>
+				<FiftyPercentDiv>
+					<FiftyPercentDiv>
+						<FooterNote>*Confira as condições da promoção</FooterNote>
+					</FiftyPercentDiv>
+				</FiftyPercentDiv>
+			</FlexHorizontallyDiv>
 		</>
 	);
 }

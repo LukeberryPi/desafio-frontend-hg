@@ -1,9 +1,10 @@
 import ProductsGrid from "./components/ProductGrid";
 import EntireHeader from "./components/EntireHeader";
+import BillingCycleRow from "./components/BillingCycleRow";
+
 import styled from "styled-components";
 import { customColors } from "./colors";
 import "../src/styles/App.css";
-import BillingCycleRow from "./components/BillingCycleButtons";
 
 const EntireAppContainer = styled.div`
 	background-color: ${customColors.backgroundWhite};

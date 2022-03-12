@@ -4,19 +4,25 @@ import { default as HeaderDesks } from "../../components/svgIcons/HeaderDesks.sv
 import { default as TableGuy } from "../../components/svgIcons/TableGuy.svg";
 import { default as DownArrowBlue } from "../../components/svgIcons/DownArrowBlue.svg";
 
-import { EntireHeaderDiv } from "./styles";
-import { SoftBluePTag } from "./styles";
-import { TextAlignCenterDiv } from "./styles";
-import { PositionAbsoluteBottom0 } from "./styles";
-import { WhiteH3 } from "./styles";
-import { FlexHorizontallyDiv } from "./styles";
+import {
+	EntireHeaderDiv,
+	SoftBluePTag,
+	TextAlignCenterDiv,
+	PositionAbsoluteBottom0,
+	WhiteH3,
+	FlexHorizontallyDiv,
+	FiftyPercentDiv,
+} from "./styles";
 
 export default function EntireHeader() {
 	return (
 		<>
-			<div>
-				<img src={HostgatorLogo} alt="logo" />
-			</div>
+			<FlexHorizontallyDiv>
+				<FiftyPercentDiv>
+					<img src={HostgatorLogo} alt="logo" />
+				</FiftyPercentDiv>
+				<FiftyPercentDiv></FiftyPercentDiv>
+			</FlexHorizontallyDiv>
 			<EntireHeaderDiv>
 				<img src={HeaderDesks} alt="header desks" />
 				<TextAlignCenterDiv>
@@ -47,4 +53,3 @@ export default function EntireHeader() {
 		</>
 	);
 }
-

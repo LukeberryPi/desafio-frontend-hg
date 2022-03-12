@@ -15,7 +15,7 @@ export const BoldedP = styled.p`
 	margin-left: 4px;
 `;
 
-export const ResizeP = styled.p`
+export const Resize13pxP = styled.p`
 	margin: 0;
 	font-size: 13px;
 `;
@@ -30,4 +30,12 @@ export const HugeInstallmentPrice = styled.p`
 	font-size: 35px;
 	font-weight: bold;
 	top: 0px;
+	margin: 0px 6px;
 `;
+
+export const BaselineDiv = styled.div`
+	height: 10%;
+	display: flex;
+	align-items: baseline;
+	padding: 0;
+`

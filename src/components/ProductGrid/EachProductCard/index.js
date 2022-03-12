@@ -1,11 +1,13 @@
 import ProductPerkList from "./ProductPerkList/index.js";
 import InfoFromApi from "../EachProductCard/InfoFromApi/index";
 
-import { BoldBlueP } from "../styles";
-import { FlexSection } from "../styles";
-import { ProductCardDiv } from "../styles";
-import { DisabledButton } from "./styles";
-import { CallToActionButton } from "./styles";
+import {
+	FlexSection,
+	ProductCardDiv,
+	DisabledButton,
+	CallToActionButton,
+	DarkBluePrimaryPTag,
+} from "./styles";
 
 import { default as PlanoPIcon } from "../../svgIcons/PlanoPIcon.svg";
 import { default as PlanoMIcon } from "../../svgIcons/PlanoMIcon.svg";
@@ -20,9 +22,8 @@ export const correctPlanIcon = {
 
 export default function EachProductCard(props) {
 	return (
-		<ProductCardDiv>
+		<ProductCardDiv boxShadow={props.boxShadow}>
 			<img src={props.plan} alt={props.plan} />
-			<BoldBlueP>Plan P</BoldBlueP>
 			<InfoFromApi />
 			<CallToActionButton backgroundButtonColor={props.buttonColor}>
 				Contrate Agora
@@ -31,7 +32,7 @@ export default function EachProductCard(props) {
 				<strong>1 ano de Domínio Grátis </strong>
 				<img src={InfoIcon} alt="info icon" />
 				<FlexSection>
-					<p>economize R$ 9.999,99 {"  "}</p>
+					<DarkBluePrimaryPTag>economize R$ FROM API</DarkBluePrimaryPTag>
 					<DisabledButton disabled>40% OFF</DisabledButton>
 				</FlexSection>
 			</div>
