@@ -7,7 +7,7 @@ export const CallToActionButton = styled.button`
 	font-size: 22px;
 	font-weight: 600;
 	padding: 10px 50px;
-	margin: 30px;
+	margin: 10px 30px 30px;
 	border-radius: 26px;
 	border: 0;
 	cursor: pointer;
@@ -23,12 +23,12 @@ export const BoldBlueP = styled.p`
 	font-weight: bold;
 `;
 
-export const FlexSection = styled.section`
+export const FlexDiv = styled.div`
 	display: flex;
 	align-items: center;
 `;
 
-export const ProductCardDiv = styled.div`
+export const ProductCardSection = styled.section`
 	display: flex;
 	height: 650px;
 	flex-direction: column;
@@ -48,7 +48,7 @@ export const DisabledButton = styled.button`
 	border-radius: 31px;
 	font-weight: bold;
 	color: ${customColors.plainWhite};
-	border-color: ${customColors.greenPrimary};
+	border: 4px solid ${customColors.greenPrimary};
 `;
 
 export const DarkBluePrimaryPTag = styled.p`

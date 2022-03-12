@@ -12,4 +12,5 @@ export const UnderlinedSpan = styled.span`
 export const LeftMostDiv = styled.div`
     text-align: left;
     margin-left: -26px;
+    margin-top: 40px;
 `

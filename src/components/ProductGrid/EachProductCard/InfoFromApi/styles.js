@@ -16,7 +16,7 @@ export const BoldedP = styled.p`
 `;
 
 export const Resize13pxP = styled.p`
-	margin: 0;
+	margin: -5px 0px 0px;
 	font-size: 13px;
 `;
 
@@ -38,4 +38,4 @@ export const BaselineDiv = styled.div`
 	display: flex;
 	align-items: baseline;
 	padding: 0;
-`
+`;

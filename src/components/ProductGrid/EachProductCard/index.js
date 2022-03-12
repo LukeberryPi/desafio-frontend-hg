@@ -2,8 +2,8 @@ import ProductPerkList from "./ProductPerkList/index.js";
 import InfoFromApi from "../EachProductCard/InfoFromApi/index";
 
 import {
-	FlexSection,
-	ProductCardDiv,
+	FlexDiv,
+	ProductCardSection,
 	DisabledButton,
 	CallToActionButton,
 	DarkBluePrimaryPTag,
@@ -22,7 +22,7 @@ export const correctPlanIcon = {
 
 export default function EachProductCard(props) {
 	return (
-		<ProductCardDiv boxShadow={props.boxShadow}>
+		<ProductCardSection boxShadow={props.boxShadow}>
 			<img src={props.plan} alt={props.plan} />
 			<InfoFromApi />
 			<CallToActionButton backgroundButtonColor={props.buttonColor}>
@@ -31,15 +31,15 @@ export default function EachProductCard(props) {
 			<div>
 				<strong>1 ano de Domínio Grátis </strong>
 				<img src={InfoIcon} alt="info icon" />
-				<FlexSection>
+				<FlexDiv>
 					<DarkBluePrimaryPTag>economize R$ FROM API</DarkBluePrimaryPTag>
 					<DisabledButton disabled>40% OFF</DisabledButton>
-				</FlexSection>
+				</FlexDiv>
 			</div>
 			<ProductPerkList
 				productStorage={props.productStorage}
 				numberOfSites={props.numberOfSites}
 			/>
-		</ProductCardDiv>
+		</ProductCardSection>
 	);
 }

@@ -19,7 +19,8 @@ export const BillingCycleRowDiv = styled.div`
 	border: 2px solid ${customColors.hostGatorBlue};
 	box-shadow: 0px 1px 4px ${customColors.hostGatorBlue};
 	margin: 10px 0px 20px 0px;
-	height: 30px;
+	height: 40px;
+	padding: 0px;
 `;
 
 export const BillingCycleButton = styled.button`
@@ -28,12 +29,14 @@ export const BillingCycleButton = styled.button`
 	border-bottom-right-radius: ${(props) => props.borderRadius}px;
 	border-top-left-radius: ${(props) => props.borderRadius}px;
 	border-bottom-left-radius: ${(props) => props.borderRadius}px;
+	outline: 1px solid white;
 	border: white;
 	background-color: ${(props) => props.billingCycleButtonColor};
 	color: ${(props) => props.billingCycleButtonTextColor};
 	font-weight: ${(props) => props.bold};
 	cursor: pointer;
 	height: 100%;
+	margin: 0px 5px;
 
 	&:hover {
 		color: ${customColors.plainWhite};
@@ -57,5 +60,5 @@ export const HostGatorBluePTag = styled.p`
 `;
 
 export const ButtonText = styled.p`
-	margin-left: 5px;
+	margin: 5px;
 `

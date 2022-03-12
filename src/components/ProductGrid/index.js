@@ -22,7 +22,7 @@ export default function ProductGrid() {
 					numberOfSites="Sites Ilimitados"
 					buttonColor={customColors.hostGatorOrange}
 					plan={correctPlanIcon.planM}
-					boxShadow={`0 -12px 0 ${customColors.hostGatorOrange}, 0 4px 0 ${customColors.hostGatorOrange}`}
+					boxShadow={`0 -12px 0 ${customColors.hostGatorOrange}, 0 5px 0 ${customColors.hostGatorOrange}`}
 				/>
 				<EachProductCard
 					productStorage={150}

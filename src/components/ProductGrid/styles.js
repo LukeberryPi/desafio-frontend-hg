@@ -6,7 +6,7 @@ export const BoldBlueP = styled.p`
 	font-weight: bold;
 `;
 
-export const FlexSection = styled.section`
+export const FlexSection = styled.main`
 	display: flex;
 	margin-top: 26px;
 	text-align: center;
