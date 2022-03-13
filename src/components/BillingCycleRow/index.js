@@ -13,6 +13,16 @@ import {
 import { customColors } from "../../colors";
 
 export default function BillingCycleRow() {
+	// QUAL DESSAS UTILIZAR?
+	// (A) useState para definir ciclo de pagamento
+	// const [billingCycle, setBillingCycle] = useState("triennially")
+
+	// (B) arrow function para definir ciclo de pagamento
+	// const setBillingCycle = (billingCycle) => {
+	// }
+
+	// armar com prop onClick
+
 	return (
 		<TextAlignCenterDiv>
 			<HostGatorBluePTag>Quero pagar a cada:</HostGatorBluePTag>
@@ -22,28 +32,31 @@ export default function BillingCycleRow() {
 					billingCycleButtonColor={customColors.hostGatorBlue}
 					borderRadius={21}
 					bold="bold"
-					onClick={"setPricesToTriennally"}
+					// onClick={setBillingCycle("triennially")}
 				>
 					<ButtonDiv>
-						<img src={SelectedRadio} alt="unselected radio" /> <ButtonText>3 anos</ButtonText>
+						<img src={SelectedRadio} alt="unselected radio" />{" "}
+						<ButtonText>3 anos</ButtonText>
 					</ButtonDiv>
 				</BillingCycleButton>
 				<BillingCycleButton
 					billingCycleButtonTextColor={customColors.hostGatorBlue}
 					borderRadius={21}
-					onClick={"setPricesToAnnually"}
+					// onClick={setBillingCycle("annually")}
 				>
 					<ButtonDiv>
-						<img src={UnselectedRadio} alt="unselected radio" /> <ButtonText>1 ano</ButtonText>
+						<img src={UnselectedRadio} alt="unselected radio" />{" "}
+						<ButtonText>1 ano</ButtonText>
 					</ButtonDiv>
 				</BillingCycleButton>
 				<BillingCycleButton
 					billingCycleButtonTextColor={customColors.hostGatorBlue}
 					borderRadius={21}
-					onClick={"setPricesToMonthly"}
+					// onClick={setBillingCycle("monthly")}
 				>
 					<ButtonDiv>
-						<img src={UnselectedRadio} alt="unselected radio" /> <ButtonText>1 mês</ButtonText>
+						<img src={UnselectedRadio} alt="unselected radio" />{" "}
+						<ButtonText>1 mês</ButtonText>
 					</ButtonDiv>
 				</BillingCycleButton>
 			</BillingCycleRowDiv>

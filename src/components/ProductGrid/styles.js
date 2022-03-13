@@ -7,18 +7,34 @@ export const BoldBlueP = styled.p`
 `;
 
 export const FlexSection = styled.main`
-	display: flex;
-	margin-top: 26px;
-	text-align: center;
-	justify-content: center;
+	@media (min-width: 1024px) {
+		display: flex;
+		margin-top: 26px;
+		text-align: center;
+		justify-content: center;
+	}
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		flex-direction: column;
+		width: 400px;
+		margin: 0 auto;
+		justify-content: center;
+		text-align: center;
+	} ;
 `;
 
 export const ProductCardDiv = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+	@media (min-width: 1024px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	@media (max-width: 1023px) {
+		
+	} ;
 `;
 
 export const FooterNote = styled.p`

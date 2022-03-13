@@ -16,7 +16,7 @@ export const BoldedP = styled.p`
 `;
 
 export const Resize13pxP = styled.p`
-	margin: -5px 0px 0px;
+	margin: -6px 0px 0px;
 	font-size: 13px;
 `;
 

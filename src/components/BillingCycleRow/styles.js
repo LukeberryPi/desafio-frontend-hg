@@ -11,12 +11,12 @@ export const TextAlignCenterDiv = styled.div`
 `;
 
 export const BillingCycleRowDiv = styled.div`
-	display: inline-block;
+	display: flex;
 	border-top-right-radius: ${(props) => props.borderRadius}px;
 	border-bottom-right-radius: ${(props) => props.borderRadius}px;
 	border-top-left-radius: ${(props) => props.borderRadius}px;
 	border-bottom-left-radius: ${(props) => props.borderRadius}px;
-	border: 2px solid ${customColors.hostGatorBlue};
+	outline: 2px solid ${customColors.hostGatorBlue};
 	box-shadow: 0px 1px 4px ${customColors.hostGatorBlue};
 	margin: 10px 0px 20px 0px;
 	height: 40px;
@@ -37,6 +37,7 @@ export const BillingCycleButton = styled.button`
 	cursor: pointer;
 	height: 100%;
 	margin: 0px 5px;
+	padding: 15px;
 
 	&:hover {
 		color: ${customColors.plainWhite};

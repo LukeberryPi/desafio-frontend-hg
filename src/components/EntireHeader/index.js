@@ -12,6 +12,7 @@ import {
 	WhiteH3,
 	FlexHorizontallyDiv,
 	FiftyPercentDiv,
+	SvgContainerDisappearTabletMobile,
 } from "./styles";
 
 export default function EntireHeader() {
@@ -24,7 +25,9 @@ export default function EntireHeader() {
 				<FiftyPercentDiv></FiftyPercentDiv>
 			</FlexHorizontallyDiv>
 			<EntireHeaderDiv>
-				<img src={HeaderDesks} alt="header desks" />
+				<SvgContainerDisappearTabletMobile>
+					<img src={HeaderDesks} alt="header desks" />
+				</SvgContainerDisappearTabletMobile>
 				<TextAlignCenterDiv>
 					<SoftBluePTag>Hospedagem de Sites</SoftBluePTag>
 					<WhiteH3>
@@ -45,7 +48,9 @@ export default function EntireHeader() {
 						</SoftBluePTag>
 					</FlexHorizontallyDiv>
 				</TextAlignCenterDiv>
-				<img src={TableGuy} alt="table guy" />
+				<SvgContainerDisappearTabletMobile>
+					<img src={TableGuy} alt="table guy" />
+				</SvgContainerDisappearTabletMobile>
 				<PositionAbsoluteBottom0>
 					<img src={DownArrowBlue} alt="down arrow blue" />
 				</PositionAbsoluteBottom0>

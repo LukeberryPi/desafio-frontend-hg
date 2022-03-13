@@ -24,7 +24,7 @@ export default function EachProductCard(props) {
 	return (
 		<ProductCardSection boxShadow={props.boxShadow}>
 			<img src={props.plan} alt={props.plan} />
-			<InfoFromApi />
+			<InfoFromApi api={props.api} />
 			<CallToActionButton backgroundButtonColor={props.buttonColor}>
 				Contrate Agora
 			</CallToActionButton>

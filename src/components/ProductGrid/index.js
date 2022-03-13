@@ -3,21 +3,22 @@ import { customColors } from "../../colors";
 
 import EachProductCard from "./EachProductCard/index.js";
 
-import { FlexSection } from "./styles";
-import { FooterNote } from "./styles";
+import { FlexSection, FooterNote } from "./styles";
 import { FlexHorizontallyDiv, FiftyPercentDiv } from "../EntireHeader/styles";
 
-export default function ProductGrid() {
+export default function ProductGrid(props) {
 	return (
 		<>
 			<FlexSection>
 				<EachProductCard
+					api={props.api}
 					productStorage={100}
 					numberOfSites="Para 1 site"
 					buttonColor={customColors.hostGatorBlue}
 					plan={correctPlanIcon.planP}
 				/>
 				<EachProductCard
+					api={props.api}
 					productStorage={100}
 					numberOfSites="Sites Ilimitados"
 					buttonColor={customColors.hostGatorOrange}
@@ -25,6 +26,7 @@ export default function ProductGrid() {
 					boxShadow={`0 -12px 0 ${customColors.hostGatorOrange}, 0 5px 0 ${customColors.hostGatorOrange}`}
 				/>
 				<EachProductCard
+					api={props.api}
 					productStorage={150}
 					numberOfSites="Sites Ilimitados"
 					buttonColor={customColors.hostGatorBlue}

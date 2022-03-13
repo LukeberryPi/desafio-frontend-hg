@@ -6,23 +6,24 @@ import {
 	Resize13pxP,
 	InstallmentPrice,
 	HugeInstallmentPrice,
-	BaselineDiv
+	BaselineDiv,
 } from "./styles";
 
-export default function InfoFromApi() {
-    return (
-			<>
-				<BoldBlueP>FROM API</BoldBlueP>
-				<FlexHorizontallyDiv>
-					<DashedP>R$ FROM API</DashedP>
-					<BoldedP>R$ FROM API</BoldedP>
-				</FlexHorizontallyDiv>
-				<Resize13pxP>equivalente a </Resize13pxP>
-				<BaselineDiv>
-					<InstallmentPrice>R$</InstallmentPrice>
-					<HugeInstallmentPrice>FROM API</HugeInstallmentPrice>
-					<InstallmentPrice>/mês*</InstallmentPrice>
-				</BaselineDiv>
-			</>
-		);
-}
+export default function InfoFromApi(props) {
+	
+	return (
+		<>
+			<BoldBlueP>Plan X</BoldBlueP>
+			<FlexHorizontallyDiv>
+				<DashedP>R$ 341,49</DashedP>
+				<BoldedP>R$ 299, 99</BoldedP>
+			</FlexHorizontallyDiv>
+			<Resize13pxP>equivalente a </Resize13pxP>
+			<BaselineDiv>
+				<InstallmentPrice>R$</InstallmentPrice>
+				<HugeInstallmentPrice>49,99</HugeInstallmentPrice>
+				<InstallmentPrice>/mês*</InstallmentPrice>
+			</BaselineDiv>
+		</>
+	);
+	}
