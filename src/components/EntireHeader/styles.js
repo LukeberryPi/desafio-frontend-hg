@@ -77,3 +77,10 @@ export const SvgContainerDisappearTabletMobile = styled.div`
 		display: none;
 	}
 `;
+
+export const LogoDiv = styled.div`
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+`;

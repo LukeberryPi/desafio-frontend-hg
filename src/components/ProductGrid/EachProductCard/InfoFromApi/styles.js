@@ -30,7 +30,7 @@ export const HugeInstallmentPrice = styled.p`
 	font-size: 35px;
 	font-weight: bold;
 	top: 0px;
-	margin: 0px 6px;
+	margin: 0px 0px 0px 6px;
 `;
 
 export const BaselineDiv = styled.div`
@@ -41,18 +41,16 @@ export const BaselineDiv = styled.div`
 `;
 
 export const CallToActionButton = styled.button`
-	@media (min-width: 1024px) {
-		background-color: ${(props) => props.buttonColor};
-		color: white;
-		font-size: 22px;
-		font-weight: 600;
-		padding: 10px 50px;
-		margin: 10px 30px 30px;
-		border-radius: 26px;
-		border: 0;
-		cursor: pointer;
-		transition: transform 0.25s;
-	}
+	background-color: ${(props) => props.buttonColor};
+	color: white;
+	font-size: 22px;
+	font-weight: 600;
+	padding: 10px 50px;
+	margin: 10px 30px 30px;
+	border-radius: 26px;
+	border: 0;
+	cursor: pointer;
+	transition: transform 0.25s;
 
 	&:hover {
 		transform: scale(1.08);
@@ -77,4 +75,9 @@ export const DarkBluePrimaryPTag = styled.p`
 	font-size: 14px;
 	color: ${customColors.darkBluePrimary};
 	margin-right: 5px;
+`;
+
+export const BoldBlueP = styled.p`
+	color: ${customColors.darkBluePrimary};
+	font-weight: bold;
 `;

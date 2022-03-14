@@ -13,17 +13,18 @@ import {
 	FlexHorizontallyDiv,
 	FiftyPercentDiv,
 	SvgContainerDisappearTabletMobile,
+	LogoDiv
 } from "./styles";
 
 export default function EntireHeader() {
 	return (
 		<>
-			<FlexHorizontallyDiv>
+			<LogoDiv>
 				<FiftyPercentDiv>
 					<img src={HostgatorLogo} alt="logo" />
 				</FiftyPercentDiv>
 				<FiftyPercentDiv></FiftyPercentDiv>
-			</FlexHorizontallyDiv>
+			</LogoDiv>
 			<EntireHeaderDiv>
 				<SvgContainerDisappearTabletMobile>
 					<img src={HeaderDesks} alt="header desks" />

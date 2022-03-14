@@ -34,13 +34,11 @@ function App() {
 	}, []);
 
 	return (
-		<>
-			<EntireAppContainer>
-				<EntireHeader />
-				<BillingCycleRow billingCycle={billingCycle}/>
-				<ProductsGrid api={products} />
-			</EntireAppContainer>
-		</>
+		<EntireAppContainer>
+			<EntireHeader />
+			<BillingCycleRow setBillingCycle={setBillingCycle} billingCycle={billingCycle} />
+			<ProductsGrid api={products} />
+		</EntireAppContainer>
 	);
 }
 

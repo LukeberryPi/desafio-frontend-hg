@@ -1,9 +1,10 @@
 import { FlexHorizontallyDiv } from "../../../EntireHeader/styles.js";
-import { BoldBlueP } from "../styles.js";
+
 import {
 	DashedP,
 	BoldedP,
 	Resize13pxP,
+	BoldBlueP,
 	InstallmentPrice,
 	HugeInstallmentPrice,
 	BaselineDiv,
@@ -25,27 +26,31 @@ export const correctPlanIcon = {
 };
 
 export default function InfoFromApi(props) {
-	
 	const planName = props.api.length === 0 ? "" : props.api[props.index].name;
-	
+
 	const originalPrice =
 		props.api.length === 0
 			? ""
 			: Number(props.api[props.index].cycle.triennially.priceOrder).toFixed(2);
-	
+
 	const discountedPrice =
 		props.api.length === 0 ? "" : Number(originalPrice * 0.6).toFixed(2);
-	
+
 	const eachInstallment =
 		props.api.length === 0
 			? ""
 			: Number(
 					discountedPrice / props.api[props.index].cycle.triennially.months
-			).toFixed(2);
-	
-	const economyAmount = props.api.length === 0 ? "" : Number(originalPrice - discountedPrice).toFixed(2)
+			  ).toFixed(2);
 
-	const productCode = props.api.length === 0 ? "" : props.api[props.index].id;
+	const economyAmount =
+		props.api.length === 0
+			? ""
+			: Number(originalPrice - discountedPrice).toFixed(2);
+
+	// product code? id or name? for form generated url:
+	// const productCode = props.api.length === 0 ? "" : props.api[props.index].id;
+	// const productCode = props.api.length === 0 ? "" : props.api[props.index].name;
 
 	return (
 		<>
@@ -64,6 +69,8 @@ export default function InfoFromApi(props) {
 			</BaselineDiv>
 			<form action="">
 				<CallToActionButton
+					// how to encode URL through form + button properties?
+					// use string literals to use dynamic data in URL =>
 					name="a=add%26pid%3DproductCode%26billingCycle%3Dtriennially%26promocode%3DPROMOHG40"
 					type="submit"
 					buttonColor={props.buttonColor}

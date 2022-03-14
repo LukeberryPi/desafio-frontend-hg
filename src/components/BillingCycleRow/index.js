@@ -16,15 +16,15 @@ import { customColors } from "../../colors";
 
 export default function BillingCycleRow() {
 	
-
-	// (B) arrow function para definir ciclo de pagamento
+	// (B) useEffect para dar update no ciclo de pagamento sempre que a variável mudar. 
 	// useEffect(() => {
 		
 	// 	};
 	// }, [billingCycle])
 	
 	// const updateBillingCycle = (whichCycle) => {
-	// 		setBillingCycle(whichCycle);
+	// 	setBillingCycle(whichCycle);
+	// }
 
 	return (
 		<TextAlignCenterDiv>
