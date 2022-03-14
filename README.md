@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How to run this app.
+## How to run this app
 
 You'll need an IDE for better use of this app. My recommendation is to [download VS Code](https://code.visualstudio.com/download)
 
