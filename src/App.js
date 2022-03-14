@@ -15,6 +15,7 @@ const EntireAppContainer = styled.div`
 function App() {
 
 	const [products, setProducts] = useState([]);
+	const [billingCycle, setBillingCycle] = useState("triennially");
 
 	useEffect(() => {
 		const url =
@@ -34,11 +35,9 @@ function App() {
 
 	return (
 		<>
-			{/* {products.map((product) =>
-				<div>{product.name}</div>)} */}
 			<EntireAppContainer>
 				<EntireHeader />
-				<BillingCycleRow />
+				<BillingCycleRow billingCycle={billingCycle}/>
 				<ProductsGrid api={products} />
 			</EntireAppContainer>
 		</>

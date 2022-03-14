@@ -1,3 +1,5 @@
+// import { useEffect, useState } from "react";
+
 import { default as UnselectedRadio } from "../svgIcons/UnselectedRadio.svg";
 import { default as SelectedRadio } from "../svgIcons/SelectedRadio.svg";
 
@@ -13,15 +15,16 @@ import {
 import { customColors } from "../../colors";
 
 export default function BillingCycleRow() {
-	// QUAL DESSAS UTILIZAR?
-	// (A) useState para definir ciclo de pagamento
-	// const [billingCycle, setBillingCycle] = useState("triennially")
+	
 
 	// (B) arrow function para definir ciclo de pagamento
-	// const setBillingCycle = (billingCycle) => {
-	// }
-
-	// armar com prop onClick
+	// useEffect(() => {
+		
+	// 	};
+	// }, [billingCycle])
+	
+	// const updateBillingCycle = (whichCycle) => {
+	// 		setBillingCycle(whichCycle);
 
 	return (
 		<TextAlignCenterDiv>
@@ -32,7 +35,8 @@ export default function BillingCycleRow() {
 					billingCycleButtonColor={customColors.hostGatorBlue}
 					borderRadius={21}
 					bold="bold"
-					// onClick={setBillingCycle("triennially")}
+					// onClick={updateBillingCycle("triennially")}
+					// billingCycle={billingCycle}
 				>
 					<ButtonDiv>
 						<img src={SelectedRadio} alt="unselected radio" />{" "}
@@ -42,7 +46,8 @@ export default function BillingCycleRow() {
 				<BillingCycleButton
 					billingCycleButtonTextColor={customColors.hostGatorBlue}
 					borderRadius={21}
-					// onClick={setBillingCycle("annually")}
+					// onClick={updateBillingCycle("annually")}
+					// billingCycle={billingCycle}
 				>
 					<ButtonDiv>
 						<img src={UnselectedRadio} alt="unselected radio" />{" "}
@@ -52,7 +57,8 @@ export default function BillingCycleRow() {
 				<BillingCycleButton
 					billingCycleButtonTextColor={customColors.hostGatorBlue}
 					borderRadius={21}
-					// onClick={setBillingCycle("monthly")}
+					// onClick={updateBillingCycle("monthly")}
+					// billingCycle={billingCycle}
 				>
 					<ButtonDiv>
 						<img src={UnselectedRadio} alt="unselected radio" />{" "}

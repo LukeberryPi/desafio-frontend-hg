@@ -3,7 +3,7 @@ import { customColors } from "../../../colors";
 
 export const CallToActionButton = styled.button`
 	@media (min-width: 1024px) {
-		background-color: ${(props) => props.backgroundButtonColor};
+		background-color: ${(props) => props.buttonColor};
 		color: white;
 		font-size: 22px;
 		font-weight: 600;

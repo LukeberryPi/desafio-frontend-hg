@@ -16,6 +16,7 @@ export default function ProductGrid(props) {
 					numberOfSites="Para 1 site"
 					buttonColor={customColors.hostGatorBlue}
 					plan={correctPlanIcon.planP}
+					index={0}
 				/>
 				<EachProductCard
 					api={props.api}
@@ -24,6 +25,7 @@ export default function ProductGrid(props) {
 					buttonColor={customColors.hostGatorOrange}
 					plan={correctPlanIcon.planM}
 					boxShadow={`0 -12px 0 ${customColors.hostGatorOrange}, 0 5px 0 ${customColors.hostGatorOrange}`}
+					index={1}
 				/>
 				<EachProductCard
 					api={props.api}
@@ -31,6 +33,7 @@ export default function ProductGrid(props) {
 					numberOfSites="Sites Ilimitados"
 					buttonColor={customColors.hostGatorBlue}
 					plan={correctPlanIcon.planTurbo}
+					index={5}
 				/>
 			</FlexSection>
 			<FlexHorizontallyDiv>
